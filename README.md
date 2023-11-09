@@ -14,7 +14,7 @@ This project uses the following Node modules:
 
 1. Clone this repository:
 
-git clone simple-nodejs-web-server
+git clone https://github.com/blazkenth0/Simple-Nodejs-Web-Server
 cd simple-nodejs-web-server
 
 2. Install dependencies:
