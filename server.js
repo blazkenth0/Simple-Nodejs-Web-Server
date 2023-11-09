@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 
 // Listening specified ip adress and port.
 app.listen(port, ipAddress, () => {
-  console.log(`Sunucu http://${ipAddress}:${port} adresinde çalışıyor.`);
+  console.log(`Server is running on http://${ipAddress}:${port}.`);
 });
