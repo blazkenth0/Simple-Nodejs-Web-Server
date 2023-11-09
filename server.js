@@ -2,19 +2,18 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// IP adresi ve port numarasını ayarla, varsayılan değerler kullanılır
+// Set your IP address and port, default values are here. 
 const ipAddress = 'localhost';
 const port = 4000;
 
-// www klasöründeki dosyaları sunma
 app.use(express.static(path.join(__dirname, 'www')));
 
-// Ana sayfa için index.html dosyasını gönderme
+// Serve index.html file on ./www directory.
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'www', 'index.html'));
 });
 
-// Sunucuyu dinlemeye başlama
+// Listening specified ip adress and port.
 app.listen(port, ipAddress, () => {
   console.log(`Sunucu http://${ipAddress}:${port} adresinde çalışıyor.`);
 });
